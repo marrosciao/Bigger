@@ -1,4 +1,4 @@
-# AdventureGame
+# Bigger an adventureGame
 This is ment to be a game consisting of many smal projects. All for the sake of practicing.
 
 You spawn as teenage kid during the middle ages not far away from the fortress. You can explore the fortress and comunicate with the villigars. My goal is that the player and the programmers together will create a fictional worl that grows with multipple of paths to explore with easter eggs and bad jokes to find. 
