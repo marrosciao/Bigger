@@ -1,9 +1,10 @@
-public class Player{
+public class Character{
     private String name;
-    private Int HitPoints;
+    private int hitPoints;
     private String [] bag; //Primarely only allow 10 items.
+    private String description;
     
-    public Player(){
+    public Character(){
     
     }
     
