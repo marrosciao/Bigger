@@ -1,6 +1,6 @@
-public class Building extends Object{
+public class Building extends GameObject{
 
-    public Building{
+    public Building() {
     
     }
 }

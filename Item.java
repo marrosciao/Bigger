@@ -1,5 +1,5 @@
 
-public class Item extends Object {
+public class Item extends GameObject {
     
     public Item(){
     
