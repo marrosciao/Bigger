@@ -1,0 +1,17 @@
+
+
+
+These are some of the things left to do:
+
+
+Saving and loading:
+    -Enable to save a game
+        -Enable overwriting old game
+            -Only if have password
+    -Enable to load a game
+        -Enable choosing specific save
+            -Only if have password
+            
+Creating world:
+    -Write a well arranged txt-file with keywords so that a Java method can interpret what to add.
+    -Add function of players adding code to the txt-file
