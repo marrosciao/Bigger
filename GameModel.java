@@ -12,9 +12,32 @@ public class GameModel {
      */
     private void setUpGame(){
     	
-    	
-    	
-    	
+    }
+    
+    private void increaseGame(){
     	
     }
+    
+    private void saving(){
+    	
+    }
+    
+    private void loading(){
+    	
+    }
+    
+    private void ending(){
+    	
+    }
+    
+    private void highScore(){
+    	
+    }
+    
+    private void feedback(){
+    	
+    }
+    
+    
+    
 }

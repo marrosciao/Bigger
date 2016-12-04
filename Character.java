@@ -1,12 +1,11 @@
 import java.util.*;
 
 public class Character extends GameObject{
-    private String animalType; //T.ex. human, dragon...  
+    private String animalType; //T.ex. human, dragon, cat...  
 	private String name;
     private int hitPoints;
     private LinkedList<Item> bag = new LinkedList<Item>();  //Primarily only allow 10 items.
-    //private Item[] bag; //Primarily only allow 10 items.
-    private Item[] equipment;
+    private LinkedList<Item> equipment = new LinkedList<Item>();
     private int attack;
     private int defence;
     
@@ -58,11 +57,11 @@ public class Character extends GameObject{
 		this.bag.add(object);
 	}
 
-	public Item[] getEquipment() {
+	public LinkedList<Item> getEquipment() {
 		return equipment;
 	}
 
-	public void setEquipment(Item[] equipment) {
+	public void setEquipment(LinkedList<Item> equipment) {
 		this.equipment = equipment;
 	}
 

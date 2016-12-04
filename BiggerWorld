@@ -1,0 +1,17 @@
+
+
+
+    /**
+     *This is the world of Bigger.  
+     * 
+     * It is sorted in to chunks of locations where a big location can contain smaller locations in it. 
+     * Ex. outside of house contains plenty of rooms. 
+     * Use "##" to indicate where a new chunk begins, followed by key words important for the code processing the file.
+     * Use "#" followed by key words to indicate new GameObject 
+     * 
+     * 
+     */
+     
+     
+     
+     

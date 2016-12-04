@@ -1,11 +1,21 @@
 
 
+
 These are some of the things left to do:
+
 
 Declaring standard objects:
     -Declare the objects that is made
 
 
+Creating world:
+    -Write a well arranged txt-file with keywords so that a Java method can interpret what to add.
+    -Add function of players adding contents to the txt-file 
+     (with swing text boxes and a save button. DIssable tex-boxes where information already is added)
+        -Test the added contents to see it doesen't crash the program
+        -Sort the txt-file after a new add or make sure the new add is added sorted
+
+        
 Saving and loading:
     -Enable to save a game
         -Enable overwriting old game
@@ -14,17 +24,10 @@ Saving and loading:
         -Enable choosing specific save
             -Only if have password
     
-            
-Creating world:
-    -Write a well arranged txt-file with keywords so that a Java method can interpret what to add.
-    -Add function of players adding contnents to the txt-file
-        -Test the added contents to see it doesen't crash the program
-        -Sort the txt-file after a new add or make sure the new add is added sorted
-        
-        
+                    
 High score list:
     -Create a ways to get different type of points examples: Easter eggs, 
-        -Sort and pressent high score
+        -Sort and present high score
         -Change what to sort high score by
     
         
@@ -33,6 +36,6 @@ Feedback:
     
     
 Ending:
-    -Compleating the game (have a choice to end or continue)
+    -Completing the game (have a choice to end or continue)
     -Getting killed
     
