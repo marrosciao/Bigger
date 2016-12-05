@@ -24,11 +24,9 @@ public class Passageway{
         this.hidden = false;
 	}
 	
-	
-	public void UsePassageway(Character character, Location currentLocation){// might need to move this method to an other class
-		
-		
-		
-	}
+	// might need to move this method to an other class
+	/*public void UsePassageway(Character character, Location currentLocation){
+	 
+	}*/
 	
 }

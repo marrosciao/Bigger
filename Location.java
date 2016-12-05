@@ -24,7 +24,7 @@ public class Location extends GameObject{
 	
     private LinkedList<Passageway> passageways = new LinkedList<Passageway>();  //path, road, Window, doors, hidden door
     private LinkedList<Item> ThingsPressent = new LinkedList<Item>();
-    private LinkedList<Item> CharactersPressent = new LinkedList<Item>(); //The player excluded
+    private LinkedList<NPC> NpcPressent = new LinkedList<NPC>(); //The player excluded
     
     public Location(String name, String direction, Location currentLocation){//Initiating a new location
         super(name);
@@ -32,4 +32,34 @@ public class Location extends GameObject{
         passageways.add(main);
         
     }
+    public void  inspectLocation() {
+	    getDescription();
+	    getPassageways();
+	    getThingsPressent();
+	    getNpcPressent();
+	}
+
+	public LinkedList<Passageway> getPassageways() {
+		return passageways;
+	}
+
+	public void setPassageways(LinkedList<Passageway> passageways) {
+		this.passageways = passageways;
+	}
+
+	public LinkedList<Item> getThingsPressent() {
+		return ThingsPressent;
+	}
+
+	public void setThingsPressent(LinkedList<Item> thingsPressent) {
+		ThingsPressent = thingsPressent;
+	}
+
+	public LinkedList<NPC> getNpcPressent() {
+		return NpcPressent;
+	}
+
+	public void setNpcPressent(LinkedList<NPC> npcPressent) {
+		NpcPressent = npcPressent;
+	}
 }

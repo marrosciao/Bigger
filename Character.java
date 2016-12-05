@@ -2,22 +2,28 @@ import java.util.*;
 
 public class Character extends GameObject{
     private String animalType; //T.ex. human, dragon, cat...  
-	private String name;
     private int hitPoints;
-    private LinkedList<Item> bag = new LinkedList<Item>();  //Primarily only allow 10 items.
+    //private LinkedList<Item> bag = new LinkedList<Item>();  //Primarily only allow 10 items.
     private LinkedList<Item> equipment = new LinkedList<Item>();
     private int attack;
     private int defence;
     
     public Character(String animalType){
-        this.animalType = animalType;
-        this.name = "Nameless";
+    	super("Nameless", "There is no description yet. Pleas add one.");
+    	this.animalType = animalType;
         this.hitPoints = 100;
-        //this.bag = ;          //need to set them to empty but don't know how maybe the are null to begin with
         //this.equipment =;
         this.attack = 0;
         this.defence = 1;
-        super.setDescription("There is no description yet. Pleas add one.");
+    }
+    
+    public Character(String animalType, String name, int hitPoints, LinkedList<Item> equipment, int attack, int defence, String description){
+    	super(name, description);
+    	this.animalType = animalType;
+        this.hitPoints = hitPoints;
+        this.equipment = equipment;
+        this.attack = attack;
+        this.defence = defence;
     }
 
 	public String getAnimalType() {
@@ -28,14 +34,6 @@ public class Character extends GameObject{
 		this.animalType = animalType;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
 	public int getHitPoints() {
 		return hitPoints;
 	}
@@ -44,18 +42,6 @@ public class Character extends GameObject{
 		this.hitPoints = hitPoints;
 	}
 
-	public LinkedList<Item> getBag() {
-		return bag;
-	}
-
-	public void setBag(LinkedList<Item> bag) {
-		this.bag = bag;
-	}
-	
-	
-	public void addItemToBag(Item object){
-		this.bag.add(object);
-	}
 
 	public LinkedList<Item> getEquipment() {
 		return equipment;

@@ -1,6 +1,3 @@
-
-
-
 These are some of the things left to do:
 
 
@@ -14,7 +11,15 @@ Creating world:
      (with swing text boxes and a save button. DIssable tex-boxes where information already is added)
         -Test the added contents to see it doesen't crash the program
         -Sort the txt-file after a new add or make sure the new add is added sorted
+        -Add all new adds to a seperate file so that the coder can remove adds made to cheat
+    -check if the file works with script.
+    
 
+Reading World:
+    -Read in a chunk and save it until you enter a new chunk.   
+    
+Security:
+    -Find a way to make it harder to change the code or txt-file from outside of game
         
 Saving and loading:
     -Enable to save a game
