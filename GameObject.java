@@ -9,18 +9,18 @@ public abstract class GameObject{
 		this.name = "*There is no name yet. Pleas add one.*";
 		this.description = "There is no description yet. Pleas add one.";
 	}//constroctor
-	
+
 	public GameObject(String name){
 		this.name = name;
 		this.description = "There is no description yet. Pleas add one.";
 	}//constroctor
-	
+
 	public GameObject(String name, String description){
 		this.name = name;
 		this.description = description;
 	}//constroctor
 
-	
+
 	public String getName() {
 		return name;
 	}

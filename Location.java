@@ -21,22 +21,27 @@ import java.util.LinkedList;
 
 
 public class Location extends GameObject{
-	
-    private LinkedList<Passageway> passageways = new LinkedList<Passageway>();  //path, road, Window, doors, hidden door
-    private LinkedList<Item> ThingsPressent = new LinkedList<Item>();
-    private LinkedList<NPC> NpcPressent = new LinkedList<NPC>(); //The player excluded
-    
-    public Location(String name, String direction, Location currentLocation){//Initiating a new location
-        super(name);
-        Passageway main = new Passageway(this, currentLocation);
-        passageways.add(main);
-        
-    }
-    public void  inspectLocation() {
-	    getDescription();
-	    getPassageways();
-	    getThingsPressent();
-	    getNpcPressent();
+
+	private LinkedList<Passageway> passageways = new LinkedList<Passageway>();  //path, road, Window, doors, hidden door
+	private LinkedList<Item> ThingsPressent = new LinkedList<Item>();
+	private LinkedList<NPC> NpcPressent = new LinkedList<NPC>(); //The player excluded
+
+	public Location(String name){//Initiating a new location
+		super(name);
+
+	}
+
+	public Location(String name, String direction, Location currentLocation){//Initiating a new location
+		super(name);
+		Passageway main = new Passageway(this, currentLocation);
+		passageways.add(main);
+
+	}
+	public void  inspectLocation() {
+		getDescription();
+		getPassageways();
+		getThingsPressent();
+		getNpcPressent();
 	}
 
 	public LinkedList<Passageway> getPassageways() {

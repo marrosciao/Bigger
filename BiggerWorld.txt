@@ -1,0 +1,77 @@
+
+
+
+    /**
+     *This is the world of Bigger.  
+     * 
+     * It is sorted in to chunks of locations where a big location can contain smaller locations in it. 
+     * Ex. outside of house contains plenty of rooms. 
+     * Use "#" to indicate where a new chunk begins, followed by key words important for the code processing the file.
+     * Use "#" followed by key words to indicate new GameObject 
+     * 
+     * 
+     */
+     
+     
+     
+     
+     
+Start reading
+#location: farm house
+    #description(farm house): The wind swirls softly on the field, and the old shutters squeaks quietly. The dark brown cottage have been here for ages. It looks very cosy with grass covering the roof and small smoke puffs leaving the chimeny.
+    #passageways:
+        #passageway: road
+            #locationA: farm house
+	        #locationB: fortress
+	        #direction: w
+	        #hidden: no
+	    #endPassageway: road
+	#endPassageways
+    #thingsPressent:
+        #item: bag
+        	#eatable: no
+	      	#liftable: yes
+	      	#containingCapability: 10
+	      	#containing:
+	      	    #item: apple
+	      	        #description: This is a red apple, that your mom gave you this morning.
+	      	        #eatable: no
+	      	        #liftable: yes
+	      	        #containingCapability: 10
+	      	        #containing:
+	      	    #endItem: apple
+	    #endItem: bag
+	#endThingsPressent
+	
+	  	  	    
+    #NpcPressent:
+       #NPC: cat
+           #name: shrodinger
+           #description: Nice pussy cat.
+           #hitPoints:
+           #equipment:
+               #item:
+           #attack:
+           #defence:
+           #hostile:
+       #endNpc: cat      
+    #endNpcPressent
+    
+#endLocation: farm house      
+#location: fortress
+    #description:
+        
+    #passageways:
+          #locationA: fortress
+	      #locationB: farm house
+	      #direction: e
+	      #hidden: no 
+    #thingsPressent:
+
+    #NpcPressent:
+      
+#end: fortress     
+     
+     
+     
+     

@@ -8,6 +8,7 @@ public class Character extends GameObject{
     private int attack;
     private int defence;
     
+    
     public Character(String animalType){
     	super("Nameless", "There is no description yet. Pleas add one.");
     	this.animalType = animalType;
